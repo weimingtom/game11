@@ -1,0 +1,44 @@
+
+
+
+materials{
+	blendMode 2;
+}
+model{
+	anime{
+		batch{
+			type sphere;
+			size 128,128,128;
+
+			gradation{
+				vector 1,1,1;
+				color1 0xffff0000;
+				color2 0xffffff00;
+			}
+			collision{
+				polygon{
+					number 8;
+					size 128,128;
+				}
+			}
+
+			delay 32;
+		}
+		animate{
+			scale{
+				all{
+					degree 2;
+					time 32;	velocity 0;
+					{value 50;	delay 32;}
+					{value 100;}
+				}
+			}
+			transparency{
+				degree 2;
+				time 0;	velocity 0;
+				{value 100;	delay 32;}
+				{value 0;}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+materials{
+	frontEnd;
+}
+
+batch{
+	name rect;
+	rect 0,0,32,32;
+	position 16,-16,0;
+}
+

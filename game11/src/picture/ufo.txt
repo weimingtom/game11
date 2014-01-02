@@ -1,0 +1,77 @@
+
+
+model{
+	anime{
+		batch{
+			size 32,32,32;
+			delay 600*2;
+			color 0;
+
+			collision{
+				rect{
+					size 28,28;
+				}
+			}
+		}
+		animate{
+			angle{
+				z{
+					degree 2;
+					time 32;	velocity 0;
+					{value 0;	delay 32;}
+					{value 30;	delay 32;}
+					{value 0;	delay 32;}
+					{value -30;	delay 32;}
+					{value 0;}
+					
+				}
+			}
+			position{
+				x{
+					{value 1200; delay 600*2;}
+					{value -1200;}
+				}
+			}
+		}
+	}
+}
+
+model{
+	anime{
+		batch{
+			type UFO;
+			size 32,32,32;
+		}
+		animate{
+			angle{
+				x{
+					{value -90;}
+				}
+				z{
+					{value 0;	delay 64;}
+					{value 360;}
+				}
+			}
+			ambient{
+				x{	{value -50;	delay 30;}
+					{value -100;	delay 30;}
+					{value -100;	delay 30;}
+					{value -50;}
+				}
+				y{
+					{value -100;	delay 30;}
+					{value -50;	delay 30;}
+					{value -100;	delay 30;}
+					{value -100;}
+				}
+				z{
+					{value -100;	delay 30;}
+					{value -100;	delay 30;}
+					{value -50;	delay 30;}
+					{value -100;}
+				}
+			}
+
+		}
+	}
+}

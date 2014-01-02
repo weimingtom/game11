@@ -1,0 +1,12 @@
+materials{
+	depthTest 0;
+	depthWrite 0;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,512,512;
+			size 800,1200,1;
+		}
+	}
+}

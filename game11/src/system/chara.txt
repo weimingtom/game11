@@ -1,0 +1,157 @@
+model{
+	name 爆発;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 32,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 64,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 96,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 128,0,32,32;
+			delay 8;
+		}
+	}
+}
+
+model{
+	name 1up;
+	anime{
+		batch{
+			rect 0,32,32,32;
+		}
+	}
+}
+model{
+	name 弾数アップ;
+	anime{
+		batch{
+			rect 32,32,32,32;
+		}
+	}
+}
+model{
+	name スピードアップ;
+	anime{
+		batch{
+			rect 64,32,32,32;
+		}
+	}
+}
+model{
+	name フルパワー;
+	anime{
+		batch{
+			rect 32*3,32,32,32;
+		}
+	}
+}
+
+model{
+	name ウェーブ弾;
+	anime{
+		batch{
+			rect 32*4,32,32,32;
+		}
+	}
+}
+model{
+	name ボム;
+	anime{
+		batch{
+			rect 32*5,32,32,32;
+		}
+	}
+}
+model{
+	name 四連ショット;
+	anime{
+		batch{
+			rect 32*6,32,32,32;
+		}
+	}
+}
+model{
+	name 貫通;
+	anime{
+		batch{
+			rect 32*7,32,32,32;
+		}
+	}
+}
+model{
+	name 弾;
+	anime{
+		batch{
+			rect 32*0,32*2,32,32;
+		}
+	}
+}
+model{
+	name 爆弾;
+	anime{
+		batch{
+			rect 32*1,32*2,32,32;
+		}
+	}
+}
+model{
+	name 敵弾;
+	anime{
+		batch{
+			rect 32*2,32*2,32,32;
+		}
+	}
+}
+model{
+	name オンバシラ;
+	anime{
+		batch{
+			rect 32*3,32*2,32,32;
+		}
+	}
+}
+model{
+	name 自機;
+	anime{
+		batch{
+			rect 32*0,32*3,80,48;
+		}
+	}
+}
+model{
+	name 霊夢;
+	anime{
+		batch{
+			rect 64*0,144,64,64;
+		}
+	}
+}
+model{
+	name 魔理沙;
+	anime{
+		batch{
+			rect 64*1,144,64,64;
+		}
+	}
+}
+model{
+	name 妖精;
+	anime{
+		batch{
+			rect 0,208,48,48;
+		}
+	}
+}
+
+

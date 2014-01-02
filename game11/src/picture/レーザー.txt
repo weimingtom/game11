@@ -1,0 +1,55 @@
+
+
+
+materials{
+	blendMode 1;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,64,64;
+			size 24,24,24;
+			position 0,12,0;
+
+			collision{
+				polygon{
+					number 8;
+					size 16,16;
+				}
+				position 0,12,0;
+			}
+
+			delay 128;
+		}
+		animate{
+			position{
+				y{
+					degree 2;
+					time 0;	velocity 0;
+					{value -24;	delay 128;}
+					{value 512;}
+				}
+			}
+			scale{
+				//x{
+				///	degree 2;
+				//	time 32;	velocity 0;
+				//	{value 50;	delay 32;}
+				//	{value 100;	delay 32;}
+				//	{value 50;}
+				//}
+				y{
+					degree 2;
+					time 0;	velocity 0;
+					{value 100;	delay 128;}
+					{value 2000;}
+				}
+			}
+			//transparency{
+			//	{value 100;	delay 48;}
+			//	{value 100;	delay 16;}
+			//	{value 0;}
+			//}
+		}
+	}
+}

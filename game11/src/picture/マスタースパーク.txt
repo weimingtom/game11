@@ -1,0 +1,71 @@
+
+
+
+materials{
+	blendMode 2;
+}
+model{
+	anime{
+		batch{
+			type bullet;
+			parameter{
+				bottom 0;
+			}
+			size 20,20,512;
+			position 0,-256,0;
+			angle -90,0,0;
+			
+			gradation{
+				vector 0,0,1;
+				color1 0xffffff00;
+				color2 0x0000ffff;
+			}
+
+			collision{
+				rect{
+					size 10,512;
+				}
+				position 0,-256,0;
+			}
+
+			delay 16;
+		}
+		animate{
+			scale{
+				x{
+					degree 2;
+					time 16;	velocity 0;
+					{value 250;	delay 16;}
+					{value 500;}
+				}
+				z{
+					degree 2;
+					time 16;	velocity 0;
+					{value 250;	delay 16;}
+					{value 500;}
+				}
+				y{
+					degree 2;
+					time 0;	velocity 8/100;
+					{value 500;	delay 4;}
+					{value 500;	delay 4;}
+					{value 500;}
+				}
+
+			}
+		//	angle{
+		//		y{
+		//			{value 0;	delay 16;}
+		//			{value 360;}
+		//		}
+		//	}
+			transparency{
+				degree 2;
+				time 0;	velocity 0;
+				{value 100;	delay 16;}
+				{value 0;}
+			}
+		}
+	}
+}
+

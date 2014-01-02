@@ -1,0 +1,558 @@
+materials{
+	cull 0,0;
+}
+model{
+	name 爆発;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 32,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 64,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 96,0,32,32;
+			delay 8;
+		}
+		batch{
+			rect 128,0,32,32;
+			delay 8;
+		}
+	}
+}
+
+model{
+	name 1up;
+	anime{
+		batch{
+			rect 0,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name 弾数アップ;
+	anime{
+		batch{
+			rect 32,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name スピードアップ;
+	anime{
+		batch{
+			rect 64,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name フルパワー;
+	anime{
+		batch{
+			rect 32*3,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+
+model{
+	name ウェーブ;
+	anime{
+		batch{
+			rect 32*4,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name ボム;
+	anime{
+		batch{
+			rect 32*5,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name 四連ショット;
+	anime{
+		batch{
+			rect 32*6,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name 貫通;
+	anime{
+		batch{
+			rect 32*7,32,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name 雲山;
+	anime{
+		batch{
+			rect 32*7,0,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+
+batch{
+	name アンカー;
+	rect 32*0,32*2,32,32;
+}
+
+model{
+	name 弾;
+	anime{
+		batch{
+			name アンカー;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 320;
+		}
+		animate{
+			position{
+				y{
+					{value 0;	delay 320;}
+					{value -512;}
+				}
+			}
+		}
+	}
+}
+
+model{
+	name ウェーブ弾;
+	anime{
+		batch{
+			name アンカー;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 256;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 32;	velocity 0;
+					{value 0;	delay 32;}
+					{value 64;	delay 32;}
+					{value 0;	delay 32;}
+					{value -64;	delay 32;}
+					{value 0;}
+				}
+				y{
+					{value 0;	delay 256;}
+					{value -512;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 残弾;
+	materials{
+		depthTest 0;
+		frontEnd;
+	}
+	anime{
+		batch{
+			name アンカー;
+		}
+	}
+}
+model{
+	name 爆弾;
+	anime{
+		batch{
+			rect 32*1,32*2,32,32;
+			collision{
+				rect{
+					size 20,20;
+				}
+			}
+		}
+	}
+}
+model{
+	name 敵弾;
+	anime{
+		batch{
+			rect 32*2,32*2,32,32;
+			delay 1200;
+			collision{
+				rect{
+					size 8,8;
+				}
+			}
+		}
+		animate{
+			position{
+				y{
+					{value 0; delay 1200;}
+					{value 600;}
+				}
+			}
+		}
+	}
+}
+model{
+	name オンバシラ;
+	anime{
+		batch{
+			rect 32*3,32*2,32,32;
+			collision{
+				rect{
+					size 8,32;
+				}
+			}
+		}
+	}
+}
+model{
+	name 自機;
+	anime{
+		batch{
+			rect 32*0,32*3,80,48;
+			collision{
+				rect{
+					size 64,16;
+				}
+				position 0,-16,0;
+			}
+		}
+	}
+}
+model{
+	name 霊夢;
+	anime{
+		batch{
+			rect 64*0,144,64,64;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 600*2;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 600*2;}
+					{value -1200;}
+				}
+				y{
+					degree 2;
+					time 64;	velocity 0;
+					{value 0;	delay 64;}
+					{value 64;	delay 64;}
+					{value 0;	delay 64;}
+					{value -64;	delay 64;}
+					{value 0;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 魔理沙;
+	anime{
+		batch{
+			rect 64*1,144,64,64;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 600;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 60*10;}
+					{value -1200;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 早苗;
+	anime{
+		batch{
+			rect 64*2,144,64,64;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 600*2;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 600;	velocity 0;
+					{value 1200; delay 600;}
+					{value 0;	delay 600;}
+					{value -1200;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 妖精;
+	anime{
+		batch{
+			rect 0,208,48,48;
+			collision{
+				rect{
+					size 20,32;
+				}
+			}
+			delay 600*2;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 600*2;}
+					{value -1200;}
+				}
+			}
+		}
+	}
+}
+
+
+model{
+	name 天子;
+	anime{
+		batch{
+			rect 64*3,64,64,64;
+			delay 500;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 500;}
+					{value -1200;}
+				}
+				y{
+					degree 2;
+					time 250;	velocity 0;
+					{value -300;	delay 250;}
+					{value 0;	delay 250;}
+					{value -600;}
+
+				}
+			}
+		}
+	}
+}
+model{
+	name 衣玖;
+	anime{
+		batch{
+			rect 64*2,64,64,64;
+			delay 600*2;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 1200;}
+					{value -1200;}
+				}
+				y{
+					degree 2;
+					time 16;	velocity 0;
+					{value 0;	delay 16;}
+					{value 16;	delay 16;}
+					{value 0;	delay 16;}
+					{value -16;	delay 16;}
+					{value 0;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 依姫;
+	anime{
+		batch{
+			rect 64*3,64*2,64,64;
+			delay 300;
+		}
+		animate{
+			position{
+				x{
+					{value 160; delay 300;}
+					{value -160;}
+				}
+				y{
+					degree 2;
+					time 150;	velocity 0;
+					
+					{value 600;	delay 150;}
+					{value 0;	delay 150;}
+					{value 600;}
+
+				}
+			}
+		}
+	}
+}
+model{
+	name 豊姫;
+	anime{
+		batch{
+			rect 64*3,64*3,64,64;
+			delay 1400;
+		}
+		animate{
+			position{
+				x{
+					{value 1200; delay 1400;}
+					{value -1200;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 扇子;
+	anime{
+		batch{
+			rect 32*5,0,32,32;
+			collision{
+				rect{
+					size 12,12;
+				}
+				position 4,-4;
+			}
+			delay 600*2;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 32;	velocity 0;
+					{value 0;	delay 32;}
+					{value 16;	delay 32;}
+					{value 0;	delay 32;}
+					{value -16;	delay 32;}
+					{value 0;}
+				}
+				y{
+					{value 0; delay 1200;}
+					{value -2400;}
+				}
+			}
+			angle{
+				z{
+					{value 0; delay 64;}
+					{value 360;}
+				}
+			}
+		}
+	}
+}
+model{
+	name 要石;
+	anime{
+		batch{
+			rect 32*6,0,32,32;
+			collision{
+				rect{
+					size 8,8;
+				}
+			}
+			delay 180;
+		}
+		animate{
+			position{
+				y{
+					degree 2;
+					time 0;	velocity 4;
+					{value 0;	delay 180;}
+					{value -600;}
+				}
+			}
+		}
+	}
+}
+model{
+	name shoot;
+	anime{
+		batch{
+			rect 64,208,128,48;
+			position -64,0,0;
+			delay 120;
+		}
+		animate{
+			emission{
+				all{
+					{value 0; delay 2;}
+					{value 100;	delay 2;}
+					{value 0;}
+				}
+			}
+		}
+	}
+}

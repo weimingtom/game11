@@ -1,0 +1,37 @@
+materials{
+	blendMode 2;
+	cull 0;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,256,256;
+			size 64,64,64;
+			parts{
+				rect 0,0,256,256;
+				size 64,64,64;
+				angle 0,90,0;
+			}
+			parts{
+				rect 0,0,256,256;
+				size 64,64,64;
+				angle 90,0,0;
+			}
+			delay 32;
+		}
+		animate{
+			scale{
+				all{
+					degree 2;
+					time 32;	velocity 0;
+					{value 0;	delay 32;}
+					{value 200;}
+				}
+			}
+			transparency{
+				{value 100;	delay 32;}
+				{value 0;}
+			}
+		}
+	}
+}

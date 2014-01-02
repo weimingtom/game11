@@ -1,0 +1,212 @@
+
+
+
+materials{
+	blendMode 1;
+}
+model{
+	name A;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 12,12,12;
+
+			collision{
+				polygon{
+					number 8;
+					size 8,8;
+				}
+			}
+
+			delay 32+64+128;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 32;	velocity 0;
+					{value 0;	delay 32;}
+					{value 128;	delay 64;}
+					{value 128;	delay 128;}
+					{value 800;}
+				}
+				y{
+					degree 2;
+					time 0;		velocity 0;
+					{value 0;	delay 32+64+128;}
+					{value 400;}
+
+				}
+			}
+		}
+	}
+}
+model{
+	name B;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 12,12,12;
+
+			collision{
+				polygon{
+					number 8;
+					size 8,8;
+				}
+			}
+
+			delay 128;
+		}
+		animate{
+			position{
+				x{
+
+					{value 0;	delay 128;}
+					{value 800;}
+				}
+			}
+		}
+	}
+}
+model{
+	name C;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 32,32,32;
+
+			collision{
+				polygon{
+					number 8;
+					size 16,16;
+				}
+			}
+
+			delay 192;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 0;	value 0;
+					{value 0;	delay 48;}
+					{value 300;	delay 48;}
+					{value 600;	delay 48;}
+					{value 300;	delay 48;}
+					{value 0;}
+				}
+				y{
+					degree 2;
+					time 48;	value 0;
+					{value 0;	delay 48;}
+					{value 64;	delay 48;}
+					{value 0;	delay 48;}
+					{value -64;	delay 48;}
+					{value 0;}
+				}
+			}
+			//angle{
+			//	z{
+			//		{value 0;	delay 192;}
+			//		{value 360;}
+			//	}
+			//}
+		}
+	}
+}
+
+model{
+	name ストリング;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 16,16,16;
+
+			collision{
+				polygon{
+					number 8;
+					size 8,8;
+				}
+			}
+
+			delay 192;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 0;	value 0;
+					{value 0;	delay 48;}
+					{value 150;	delay 48;}
+					{value 300;	delay 48;}
+					{value 150;	delay 48;}
+					{value 0;}
+				}
+				y{
+					degree 2;
+					time 48;	value 0;
+					{value 0;	delay 48;}
+					{value 32;	delay 48;}
+					{value 0;	delay 48;}
+					{value -32;	delay 48;}
+					{value 0;}
+				}
+			}
+		}
+	}
+}
+
+model{
+	materials{
+		blendMode 2;
+	}
+	name ブレストファイヤー;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 80,16,12;
+			color 0xffff0000;
+
+			collision{
+				polygon{
+					number 8;
+					size 64,8;
+				}
+			}
+
+			delay 128;
+		}
+		animate{
+			angle{
+				z{{value 45;}}
+			}
+		}
+	}
+}
+model{
+	materials{
+		blendMode 2;
+	}
+	name 爆発;
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 1600,1600,1600;
+
+			delay 120;
+		}
+		animate{
+			scale{
+				all{
+					{value 0;	delay 120;}
+					{value 200;}
+				}
+			}
+			transparency{
+				{value 100;	delay 90;}
+				{value 100;	delay 30;}
+				{value 0;}
+			}
+		}
+	}
+}

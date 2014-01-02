@@ -1,0 +1,96 @@
+
+
+
+materials{
+	blendMode 1;
+	frontEnd;
+	scale 200,200,200;
+}
+model{
+	name Ready;
+	anime{
+		batch{
+			rect 0,0,256,23;
+		}
+	}
+}
+model{
+	name 1up;
+	anime{
+		batch{
+			rect 0,23,256,23;
+		}
+	}
+}
+model{
+	name SpeedUp;
+	anime{
+		batch{
+			rect 0,23*2,256,23;
+		}
+	}
+}
+model{
+	name FullPower;
+	anime{
+		batch{
+			rect 0,23*3,256,23;
+		}
+	}
+}
+model{
+	name FlushBomb;
+	anime{
+		batch{
+			rect 0,23*4,256,23;
+		}
+	}
+}
+model{
+	name ShotMaxUp;
+	anime{
+		batch{
+			rect 0,23*5,256,23;
+		}
+	}
+}
+model{
+	name BroadShot;
+	anime{
+		batch{
+			rect 0,23*6,256,23;
+		}
+	}
+}
+model{
+	name Laser;
+	anime{
+		batch{
+			rect 0,23*7,256,23;
+		}
+	}
+}
+model{
+	name Bomber;
+	anime{
+		batch{
+			rect 0,23*8,256,23;
+		}
+	}
+}
+model{
+	name WaveShooter;
+	anime{
+		batch{
+			rect 0,23*9,256,23;
+		}
+	}
+}
+model{
+	name ShotSpeedUp;
+	anime{
+		batch{
+			rect 0,23*10,256,23;
+		}
+	}
+}

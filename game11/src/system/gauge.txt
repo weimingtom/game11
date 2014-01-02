@@ -1,0 +1,13 @@
+materials{
+	sprite 2;
+	cull 0,0;
+//frontEnd;
+}
+
+batch{
+	name ÉQÅ[ÉW;
+	rect 0,0,64,64;
+	position 32,0,0;
+	angle 90,0,0;
+}
+

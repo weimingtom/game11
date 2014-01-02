@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game11", "game11\game11.vcproj", "{AF87F06C-3135-481A-83C0-54037E889EA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		game9r|Win32 = game9r|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.Debug|Win32.Build.0 = Debug|Win32
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.game9r|Win32.ActiveCfg = game9r|Win32
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.game9r|Win32.Build.0 = game9r|Win32
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.Release|Win32.ActiveCfg = Release|Win32
+		{AF87F06C-3135-481A-83C0-54037E889EA2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,155 @@
+materials{
+	frontEnd;
+	blendMode 1;
+}
+model{
+	name miss;
+	anime{
+		batch{
+			rect 0,176,160,80;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+model{
+	name 0;
+	anime{
+		batch{
+			rect 0,0,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+model{
+	name 1;
+	anime{
+		batch{
+			rect 50,0,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+model{
+	name 2;
+	anime{
+		batch{
+			rect 100,0,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+model{
+	name 3;
+	anime{
+		batch{
+			rect 150,0,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+model{
+	name 4;
+	anime{
+		batch{
+			rect 200,0,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+model{
+	name 5;
+	anime{
+		batch{
+			rect 0,88,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+model{
+	name 6;
+	anime{
+		batch{
+			rect 50,88,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+model{
+	name 7;
+	anime{
+		batch{
+			rect 100,88,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+model{
+	name 8;
+	anime{
+		batch{
+			rect 150,88,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+model{
+	name 9;
+	anime{
+		batch{
+			rect 200,88,46,88;
+			position 0,40,0;
+			delay 48;
+		}
+		materials{	delay 24;	}
+		materials{	delay 24;	}
+		materials{	transparency 0;	}
+	}
+}
+
+
+

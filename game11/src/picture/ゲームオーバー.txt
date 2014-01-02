@@ -1,0 +1,14 @@
+
+
+
+materials{
+	blendMode 1;
+	frontEnd;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,256,256;
+		}
+	}
+}

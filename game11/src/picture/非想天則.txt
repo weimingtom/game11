@@ -1,0 +1,73 @@
+
+
+batch{
+	name 本体;
+	rect 0,0,256,256;
+}
+
+materials{
+	cull 0,0;
+}
+
+//ファイヤー
+//移動
+//ヨーヨー
+//移動
+//全方位
+
+model{
+	name メイン;
+	anime{
+		batch{
+			name 本体;
+
+			collision{
+				rect{
+					size 16,20;
+				}
+				position 0-22,128-42,0;
+			}
+		}
+	}
+}
+
+model{
+	name 移動;
+	anime{
+		batch{
+			name 本体;
+
+			collision{
+				rect{
+					size 16,20;
+				}
+				position 0,48,0;
+			}
+			delay 60;
+		}
+		animate{
+			angle{
+				z{
+					{value 0;	delay 60;}
+					{value 360*8;}
+				}
+			}
+		}
+	}
+}
+model{
+	name シールド;
+	anime{
+		batch{
+			color 0;
+
+			collision{
+				rect{
+					number 8;
+					size 16,128;
+				}
+				position 0,48,0;
+			}
+		}
+	}
+}

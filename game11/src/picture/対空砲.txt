@@ -1,0 +1,38 @@
+
+
+
+materials{
+	blendMode 2;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,32,32;
+			size 24,24,24;
+			position 0,12,0;
+
+			collision{
+				polygon{
+					number 8;
+					size 16,16;
+				}
+				position 0,12,0;
+			}
+
+			delay 120;
+		}
+		animate{
+			position{
+				y{
+					{value 0;	delay 120;}
+					{value 512;}
+				}
+			}
+			scale{
+				x{
+					{value 25;}
+				}
+			}
+		}
+	}
+}

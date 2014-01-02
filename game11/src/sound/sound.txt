@@ -1,0 +1,13 @@
+src/sound{
+	撃破 pyoro06;
+	ぴちゅん cursor25;
+	スペル don19;
+	ボス爆発 bom33;
+	アイテム power21;
+	攻撃 shoot23_a;
+	敵弾 shoot19;
+	ボンバー bom29;
+	連続弾 tm2_shoot003;
+	ヨーヨー shoot17;
+}
+

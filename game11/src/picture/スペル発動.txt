@@ -1,0 +1,40 @@
+
+
+
+materials{
+	blendMode 1;
+	frontEnd;
+}
+model{
+	anime{
+		batch{
+			rect 0,0,256,256;
+			size 512,512,512;
+
+			delay 120;
+		}
+		animate{
+			position{
+				x{
+					degree 2;
+					time 30;	velocity 0;
+					{value -300;	delay 30;}
+					{value 200;	delay 30;}
+					{value 200;}
+				}
+				y{
+					degree 2;
+					time 30;	velocity 0;
+					{value -300;	delay 30;}
+					{value 0;	delay 30;}
+					{value 0;}
+				}
+			}
+			transparency{
+				{value 50;	delay 30;}
+				{value 50;	delay 30;}
+				{value 0;}
+			}
+		}
+	}
+}

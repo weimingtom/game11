@@ -1,0 +1,62 @@
+materials{
+	frontEnd;
+	blendMode 1;
+//	transparency 50;
+}
+
+batch{
+	name ç∂è„;
+	rect 0,0,32,32;
+	position -16,16,0;
+}
+
+batch{
+	name è„;
+	rect 32,0,64,32;
+	position 0,16,0;
+}
+
+batch{
+	name âEè„;
+	rect 95,0,32,32;
+	position 16,16,0;
+}
+
+batch{
+	name ç∂;
+	rect 0,32,32,64;
+	position -16,0,0;
+}
+
+batch{
+	name Ç‹ÇÒÇ»Ç©;
+	rect 32,32,64,64;
+}
+
+
+batch{
+	name âE;
+	rect 95,32,32,64;
+	position 16,0,0;
+}
+
+batch{
+	name ç∂â∫;
+	rect 0,96,32,32;
+	position -16,-16,0;
+}
+
+
+batch{
+	name â∫;
+	rect 32,96,64,32;
+	position 0,-16,0;
+}
+
+batch{
+	name âEâ∫;
+	rect 95,96,32,32;
+	position 16,-16,0;
+}
+
+

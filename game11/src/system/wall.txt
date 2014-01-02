@@ -1,0 +1,10 @@
+materials{
+	frontEnd;
+	depthTest 0;
+	depthWrite 0;
+}
+batch{
+	name wall;
+	rect 0,0,800,512;
+	scale 100,120,100;
+}
